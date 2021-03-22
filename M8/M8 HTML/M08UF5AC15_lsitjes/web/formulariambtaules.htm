@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cat">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Formulari d'enviament</title>
+        <script type="text/javascript">
+            function validar(){
+            var psswd=document.getElementById("psswd").value;
+            var confpsswd=document.getElementById("confpsswd").value;
+            if(psswd==confpsswd){
+                return true;
+            }
+            else{
+                alert("No coincideix");
+                return false;
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <table style="font-family: Verdana;" align="center">
+            <tbody>
+                <tr bgcolor="306090">
+                    <td colspan="5" style="border:3px solid #306090"><h2>Enviar missatge <img src="../img/gb_reload_s.gif" alt="Logo" align="right"></h2></td>
+                </tr>
+                <tr>
+                    <form style="font-family: Verdana;" align="center" method="GET" action="mailto:lidia.sitjes@inslapineda.cat" onsubmit="return validar();">
+                    <tr>
+                        <td align="left"><label>USUARI:<input type="text" id="USUARI:" maxlength="8" required></label></td>
+                    </tr>
+                    <tr>
+                        <td align="left"><label>CONTRASENYA:<input type="password" id="psswd" required></label></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Repetició de la contrasenya:<input type="password" id="confpsswd" required></td>
+                    </tr>
+                    <tr>
+                        <td align="left"><label>E-Mail:<input type="text" method="E-MAIL"></label></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td align="left">ARXIU:<input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td align="left">IMATGE:<input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" align="center">El tamany de l'arxiu i de la imatge no pot superar els 4 KB</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" align="left">Requereixo resposta:<label><input type="radio" name="afirmació" id:"SÍ" sizw="40">SÍ</label>
+                            <label><input type="radio" name="afirmació" id="NO" size="40">NO</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Quins jocs t'interessen?
+                            <tr>
+                                <td><input type="checkbox" name="Preguntados" id="check">Preguntados</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="Amoung Us" id="check">Amoung Us</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="Subway Surfers" id="check">Subway Surfers</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="Ludo" id="check">Ludo</td>
+                            </tr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <th colspan="5" align="center">MISSATGE</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="center"><label><textarea name="" id="DESCRIPCIÓ" cols="50" rows="5"></textarea></label></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="center"><label><input type="submit" value="Enviar"><input type="submit" value="BORRAR"></label></td>
+                    </tr>
+                    </form>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+                
+                
+                
+                
+                
+                
+        

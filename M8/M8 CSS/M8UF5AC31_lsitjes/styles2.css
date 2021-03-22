@@ -1,0 +1,15 @@
+* {
+    text-align: center;
+}
+
+h2 {
+    color: purple
+}
+
+dd {
+    color: black
+}
+
+.p1:hover {
+    background-color: #ccc;
+}
